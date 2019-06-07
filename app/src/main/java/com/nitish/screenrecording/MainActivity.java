@@ -25,6 +25,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.nitish.util.Permission;
+
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE,
                 Manifest.permission.READ_EXTERNAL_STORAGE
         };
-        if (!Function.hasPermissions(this, PERMISSIONS)) {
+        if (!Permission.hasPermissions(this, PERMISSIONS)) {
             ActivityCompat.requestPermissions(this, PERMISSIONS, REQUEST_PERMISSION_KEY);
         }
 
