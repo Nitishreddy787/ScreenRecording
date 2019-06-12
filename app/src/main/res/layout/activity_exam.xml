@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/constraintLayout">
+    <!-- Top Sliding Banners -->
+    <com.nitish.util.LockableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceed"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        android:background="@drawable/btn"
+        android:src="@drawable/right_arrow"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/proceed"
+        android:background="@drawable/btn"
+        android:src="@drawable/right_arrow"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/colorPrimary"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:id="@+id/demo"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="All your insurance policies"
+        android:id="@+id/title"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txt_demo_desc"
+        android:gravity="center"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Hello"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/option1"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Option 1"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/btn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_demo_desc"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/option2"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="Option 2"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/btn"
+        app:layout_constraintTop_toBottomOf="@+id/option1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/option3"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="Option 3"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/btn"
+        app:layout_constraintTop_toBottomOf="@+id/option2"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/option4"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:text="Option 4"
+        android:background="@drawable/btn"
+        android:layout_marginEnd="35dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/option3"
+        />
+
+   <!-- <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/btn"
+        android:src="@drawable/right_arrow"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        />-->
+</android.support.constraint.ConstraintLayout>

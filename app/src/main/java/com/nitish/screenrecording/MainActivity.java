@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onToggleScreenShare() {
         if (!isRecording) {
-            initRecorder();
+          //  initRecorder();
             shareScreen();
         } else {
             mMediaRecorder.stop();
@@ -184,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
             actionBtnReload();
             return;
         }
+        initRecorder();
         mMediaProjectionCallback = new MediaProjectionCallback();
         mMediaProjection = mProjectionManager.getMediaProjection(resultCode, data);
         mMediaProjection.registerCallback(mMediaProjectionCallback, null);
